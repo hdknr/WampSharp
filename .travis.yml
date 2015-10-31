@@ -5,8 +5,8 @@ language: csharp
 solution: src/mono/WampSharpMono.sln
 
 install:
-  - travis_retry mono src/mono/.nuget/NuGet.exe restore src/mono/WampSharpMono.sln
-  - travis_retry mono src/mono/.nuget/NuGet.exe install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+  - travis_retry nuget restore src/mono/WampSharpMono.sln
+  - travis_retry nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 
 script:
   - xbuild /p:Configuration=Release src/mono/WampSharpMono.sln
