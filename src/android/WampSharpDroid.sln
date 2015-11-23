@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp", "WampSharp\WampSharp.csproj", "{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck.Android", "..\..\Fleck\src\Fleck.Android\Fleck.Android.csproj", "{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
