@@ -4,15 +4,18 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{64B28CA2-E6D7-4139-BC6A-F908B7BA20AC}</ProjectGuid>
+    <ProjectGuid>{B7125139-7E5E-4609-9582-7D7484F0050E}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>WampSharp.Default.Router</RootNamespace>
+    <RootNamespace>CrossChat.Android</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <AssemblyName>WampSharp.Default.Router</AssemblyName>
+    <AssemblyName>CrossChat.Android</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <XamarinInsightsApiKey>5db0b84e0b1d23880e24b77edabf6b1787066c27</XamarinInsightsApiKey>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;NOMSGPACK</DefineConstants>
+    <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
@@ -40,49 +43,33 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\..\packages\Xamarin.Insights.1.10.6\lib\MonoAndroid10\Xamarin.Insights.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\WampSharp\WampSharp.csproj">
-      <Project>{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}</Project>
-      <Name>WampSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Default\WampSharp.Fleck\WampSharp.Fleck.csproj">
-      <Project>{6EA1B809-10AD-43C6-81B2-EB330B4A3017}</Project>
-      <Name>WampSharp.Fleck</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj">
-      <Project>{66B331BF-3AEF-4C65-8952-DADA9751E2BA}</Project>
-      <Name>WampSharp.NewtonsoftJson</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj">
-      <Project>{FF037A9A-9AA2-4FCF-A6FA-144118617684}</Project>
-      <Name>WampSharp.WebSocket4Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Fleck\src\Fleck.Android\Fleck.Android.csproj">
-      <Project>{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}</Project>
-      <Name>Fleck.Android</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\net45\WampSharp.Default.Router\Properties\AssemblyInfo.cs">
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\..\net45\WampSharp.Default.Router\WAMP2\V2\DefaultWampAuthenticationHost.cs">
-      <Link>WAMP2\V2\DefaultWampAuthenticationHost.cs</Link>
-    </Compile>
-    <Compile Include="..\..\net45\WampSharp.Default.Router\WAMP2\V2\DefaultWampHost.cs">
-      <Link>WAMP2\V2\DefaultWampHost.cs</Link>
-    </Compile>
-  </ItemGroup>
+  <Import Project="..\..\packages\Xamarin.Insights.1.10.6\build\MonoAndroid10\Xamarin.Insights.targets" Condition="Exists('..\..\packages\Xamarin.Insights.1.10.6\build\MonoAndroid10\Xamarin.Insights.targets')" />
 </Project>
