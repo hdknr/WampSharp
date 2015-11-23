@@ -4,15 +4,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{FF037A9A-9AA2-4FCF-A6FA-144118617684}</ProjectGuid>
+    <ProjectGuid>{64B28CA2-E6D7-4139-BC6A-F908B7BA20AC}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>WampSharp.WebSocket4Net</RootNamespace>
+    <RootNamespace>WampSharp.Default.Router</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <AssemblyName>WampSharp.WebSocket4Net</AssemblyName>
+    <AssemblyName>WampSharp.Default.Router</AssemblyName>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;NET45</DefineConstants>
+    <DefineConstants>DEBUG;NOMSGPACK</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
@@ -40,9 +40,13 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="WebSocket4Net">
-      <HintPath>..\..\packages\WebSocket4Net.0.14.1\lib\monoandroid23\WebSocket4Net.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -53,29 +57,25 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\WampSharp\WampSharp.csproj">
+    <ProjectReference Include="..\WampSharp\WampSharp.csproj">
       <Project>{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}</Project>
       <Name>WampSharp</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\Properties\AssemblyInfo.cs">
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WAMP2\V2\Fluent\WebSocket4NetActivator.cs">
-      <Link>WAMP2\V2\Fluent\WebSocket4NetActivator.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WAMP2\V2\Fluent\WebSocket4NetChannelFactoryExtensions.cs">
-      <Link>WAMP2\V2\Fluent\WebSocket4NetChannelFactoryExtensions.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WebSocket4Net\WebSocket4NetBinaryConnection.cs">
-      <Link>WebSocket4Net\WebSocket4NetBinaryConnection.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WebSocket4Net\WebSocket4NetConnection.cs">
-      <Link>WebSocket4Net\WebSocket4NetConnection.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WebSocket4Net\WebSocket4NetTextConnection.cs">
-      <Link>WebSocket4Net\WebSocket4NetTextConnection.cs</Link>
-    </Compile>
+    <ProjectReference Include="..\Default\WampSharp.Fleck\WampSharp.Fleck.csproj">
+      <Project>{6EA1B809-10AD-43C6-81B2-EB330B4A3017}</Project>
+      <Name>WampSharp.Fleck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj">
+      <Project>{66B331BF-3AEF-4C65-8952-DADA9751E2BA}</Project>
+      <Name>WampSharp.NewtonsoftJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj">
+      <Project>{FF037A9A-9AA2-4FCF-A6FA-144118617684}</Project>
+      <Name>WampSharp.WebSocket4Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Fleck\src\Fleck.Android\Fleck.Android.csproj">
+      <Project>{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}</Project>
+      <Name>Fleck.Android</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
