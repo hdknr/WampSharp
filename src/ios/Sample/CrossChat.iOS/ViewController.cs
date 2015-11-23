@@ -27,8 +27,11 @@ namespace CrossChat.iOS
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.
 		}
+
 		public void OnMessage(JObject message){
 			Console.WriteLine("@  Nick {0} : {1}", message["nick"], message["message"]);
+
+			_topic.Publish (string.Format ("I've got {0}", message ["message"]));
 		}
 
 	}

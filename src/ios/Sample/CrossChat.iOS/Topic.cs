@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 using System.Reactive.Subjects;
 using WampSharp.V2;
@@ -17,10 +19,10 @@ namespace CrossChat.iOS
 		ISubject<JObject> _subject= null;
 		IDisposable _subscription  = null;
 		IWampChannel _channel = null;
+		Settings settings = new Settings ();
 
 		public Topic (Action<JObject> on_message)
 		{
-			var settings = new Settings ();
 
 			var channelFactory = new DefaultWampChannelFactory();
 			var auth = 	new WampCraClientAuthenticator(
@@ -43,6 +45,21 @@ namespace CrossChat.iOS
 			};
 
 			_channel.Open().Wait();
+		}
+
+		public void Publish(string message){
+			if (_channel != null) {
+				var topic = _channel.RealmProxy.TopicContainer.GetTopicByUri (
+					settings.GetPreference ("chat_topic")
+				);
+				topic.Publish(
+					new PublishOptions() { Acknowledge = false },
+					new object[]{ new Dictionary<string,string>{
+							{"nick", settings.GetPreference ("chat_user")},
+							{"message", message}
+						}}).Wait();
+
+			}
 		}
 	}
 }
