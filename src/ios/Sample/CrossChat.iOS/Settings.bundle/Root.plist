@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -8,15 +8,15 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Group</string>
+			<string>CrossChat</string>
 		</dict>
 		<dict>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Name</string>
+			<string>Server</string>
 			<key>KeyboardType</key>
-			<string>Alphabet</string>
+			<string>URL</string>
 			<key>AutocapitalizationType</key>
 			<string>None</string>
 			<key>AutocorrectionType</key>
@@ -24,39 +24,60 @@
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
-			<string>name_preference</string>
+			<string>chat_server</string>
 			<key>DefaultValue</key>
-			<string></string>
+			<string>ws://192.168.56.51:8080/ws</string>
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
+			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Enabled</string>
-			<key>Key</key>
-			<string>enabled_preference</string>
+			<string>User</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
 			<key>DefaultValue</key>
+			<string>iosuser</string>
+			<key>Key</key>
+			<string>chat_user</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Token</string>
+			<key>Key</key>
+			<string>chat_token</string>
+			<key>DefaultValue</key>
+			<string>iosuser</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>IsSecure</key>
 			<true/>
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSSliderSpecifier</string>
-			<key>MaximumValue</key>
-			<integer>1</integer>
-			<key>MaximumValueImage</key>
-			<string></string>
-			<key>MinimumValue</key>
-			<integer>0</integer>
-			<key>MinimumValueImage</key>
-			<string></string>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Topic</string>
 			<key>Key</key>
-			<string>slider_preference</string>
+			<string>chat_topic</string>
 			<key>DefaultValue</key>
-			<real>0.5</real>
+			<string>ja.lafoglia.room.general</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Realm</string>
+			<key>Key</key>
+			<string>chat_realm</string>
+			<key>DefaultValue</key>
+			<string>realm1</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>
 	<string>Root</string>
 </dict>
 </plist>
-
