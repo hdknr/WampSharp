@@ -46,6 +46,18 @@
     <Reference Include="Xamarin.Insights">
       <HintPath>..\..\packages\Xamarin.Insights.1.10.6\lib\MonoAndroid10\Xamarin.Insights.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\..\packages\WebSocket4Net.0.14.1\lib\monoandroid23\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -72,4 +84,34 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Insights.1.10.6\build\MonoAndroid10\Xamarin.Insights.targets" Condition="Exists('..\..\packages\Xamarin.Insights.1.10.6\build\MonoAndroid10\Xamarin.Insights.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Fleck\src\Fleck.Android\Fleck.Android.csproj">
+      <Project>{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}</Project>
+      <Name>Fleck.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WampSharp\WampSharp.csproj">
+      <Project>{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}</Project>
+      <Name>WampSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WampSharp.Default.Client\WampSharp.Default.Client.csproj">
+      <Project>{D0F77FE6-72DA-4453-B4EE-643869864B60}</Project>
+      <Name>WampSharp.Default.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WampSharp.Default.Router\WampSharp.Default.Router.csproj">
+      <Project>{64B28CA2-E6D7-4139-BC6A-F908B7BA20AC}</Project>
+      <Name>WampSharp.Default.Router</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Default\WampSharp.Fleck\WampSharp.Fleck.csproj">
+      <Project>{6EA1B809-10AD-43C6-81B2-EB330B4A3017}</Project>
+      <Name>WampSharp.Fleck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj">
+      <Project>{66B331BF-3AEF-4C65-8952-DADA9751E2BA}</Project>
+      <Name>WampSharp.NewtonsoftJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj">
+      <Project>{FF037A9A-9AA2-4FCF-A6FA-144118617684}</Project>
+      <Name>WampSharp.WebSocket4Net</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
