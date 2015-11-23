@@ -4,7 +4,7 @@
 
 ## Fleck.iOS
 
-- forked version of Fleck for building Xamarin.iOS library
+- forked version of [Fleck](https://github.com/hdknr/Fleck) for building Xamarin.iOS library
 - refered by WampSharp.Fleck
 
 ## WampSharp
