@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp", "WampSharp\Wamp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck.Android", "..\..\Fleck\src\Fleck.Android\Fleck.Android.csproj", "{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Default", "Default", "{EEA37C23-38B0-4EFA-9571-C85F45A2DB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp.Fleck", "Default\WampSharp.Fleck\WampSharp.Fleck.csproj", "{6EA1B809-10AD-43C6-81B2-EB330B4A3017}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{587D3C6D-6D36-4559-A5F4-ACA122CFAA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA1B809-10AD-43C6-81B2-EB330B4A3017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA1B809-10AD-43C6-81B2-EB330B4A3017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA1B809-10AD-43C6-81B2-EB330B4A3017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA1B809-10AD-43C6-81B2-EB330B4A3017}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6EA1B809-10AD-43C6-81B2-EB330B4A3017} = {EEA37C23-38B0-4EFA-9571-C85F45A2DB7C}
 	EndGlobalSection
 EndGlobal
