@@ -25,7 +25,12 @@
 - working compile option :  `DEBUG;NET45;NOMSGPACK`
 - `NOMSGPACK` is disabling MsgPack.
 
-## TODO
+## CrossChat.iOS
 
 - iOS Sample working with `crossbar.io` (https://github.com/hdknr/crosschat)
+- Simple Single View iOS application
+- Subscribes a topic and echoes back received messages to the same topic.
+
+## TODO
+
 - Andoroid version
