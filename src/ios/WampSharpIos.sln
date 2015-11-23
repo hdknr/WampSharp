@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp.Default.Router", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck.iOS", "..\..\Fleck\src\Fleck.iOS\Fleck.iOS.csproj", "{86A46B23-FAFB-4B85-A56B-05FBA6D9FDA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{E0B08F82-DEC4-4AE3-BEAE-512262957814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossChat.iOS", "Sample\CrossChat.iOS\CrossChat.iOS.csproj", "{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,18 @@ Global
 		Debug|iPhone = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Debug|iPhone.Build.0 = Debug|iPhone
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Release|Any CPU.Build.0 = Release|iPhone
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Release|iPhone.ActiveCfg = Release|iPhone
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Release|iPhone.Build.0 = Release|iPhone
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{31A8799C-3E84-4EFB-8D4F-C2759EB486BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31A8799C-3E84-4EFB-8D4F-C2759EB486BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31A8799C-3E84-4EFB-8D4F-C2759EB486BB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -116,5 +132,6 @@ Global
 		{31A8799C-3E84-4EFB-8D4F-C2759EB486BB} = {335C4027-CD64-4E6D-8281-8B2BD7E31622}
 		{9656F3A3-ADEC-4B2F-A0E1-E4B6DDDE75E5} = {335C4027-CD64-4E6D-8281-8B2BD7E31622}
 		{90B09403-4ABD-433D-8E33-25A424613E60} = {335C4027-CD64-4E6D-8281-8B2BD7E31622}
+		{2A89F3DC-52F3-4902-9724-EB738B9DCBD0} = {E0B08F82-DEC4-4AE3-BEAE-512262957814}
 	EndGlobalSection
 EndGlobal
