@@ -84,6 +84,9 @@
     <Reference Include="PLCrashReporterUnifiedBinding">
       <HintPath>..\..\packages\Xamarin.Insights.1.10.6\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -110,5 +113,35 @@
   <Import Project="..\..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\..\packages\Xamarin.Insights.1.10.6\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
   <ItemGroup>
     <BundleResource Include="Settings.bundle\Root.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Fleck\src\Fleck.iOS\Fleck.iOS.csproj">
+      <Project>{86A46B23-FAFB-4B85-A56B-05FBA6D9FDA0}</Project>
+      <Name>Fleck.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WampSharp\WampSharp.csproj">
+      <Project>{6C34E3A3-EEFC-46EC-AC79-BDC78415BECA}</Project>
+      <Name>WampSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WampSharp.Default.Client\WampSharp.Default.Client.csproj">
+      <Project>{34C94DB1-63BE-4A21-B859-D53257FFF5EE}</Project>
+      <Name>WampSharp.Default.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WampSharp.Default.Router\WampSharp.Default.Router.csproj">
+      <Project>{E67C7BC5-71DB-4236-A66F-B0E1C18DC8EF}</Project>
+      <Name>WampSharp.Default.Router</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Default\WampSharp.Fleck\WampSharp.Fleck.csproj">
+      <Project>{90B09403-4ABD-433D-8E33-25A424613E60}</Project>
+      <Name>WampSharp.Fleck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj">
+      <Project>{9656F3A3-ADEC-4B2F-A0E1-E4B6DDDE75E5}</Project>
+      <Name>WampSharp.NewtonsoftJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj">
+      <Project>{31A8799C-3E84-4EFB-8D4F-C2759EB486BB}</Project>
+      <Name>WampSharp.WebSocket4Net</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
