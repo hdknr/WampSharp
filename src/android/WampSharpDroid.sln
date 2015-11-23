@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp.Fleck", "Default\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp.NewtonsoftJson", "Default\WampSharp.NewtonsoftJson\WampSharp.NewtonsoftJson.csproj", "{66B331BF-3AEF-4C65-8952-DADA9751E2BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp.WebSocket4Net", "Default\WampSharp.WebSocket4Net\WampSharp.WebSocket4Net.csproj", "{FF037A9A-9AA2-4FCF-A6FA-144118617684}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +35,14 @@ Global
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF037A9A-9AA2-4FCF-A6FA-144118617684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF037A9A-9AA2-4FCF-A6FA-144118617684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF037A9A-9AA2-4FCF-A6FA-144118617684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF037A9A-9AA2-4FCF-A6FA-144118617684}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6EA1B809-10AD-43C6-81B2-EB330B4A3017} = {EEA37C23-38B0-4EFA-9571-C85F45A2DB7C}
 		{66B331BF-3AEF-4C65-8952-DADA9751E2BA} = {EEA37C23-38B0-4EFA-9571-C85F45A2DB7C}
+		{FF037A9A-9AA2-4FCF-A6FA-144118617684} = {EEA37C23-38B0-4EFA-9571-C85F45A2DB7C}
 	EndGlobalSection
 EndGlobal

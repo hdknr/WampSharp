@@ -4,15 +4,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{66B331BF-3AEF-4C65-8952-DADA9751E2BA}</ProjectGuid>
+    <ProjectGuid>{FF037A9A-9AA2-4FCF-A6FA-144118617684}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>WampSharp.NewtonsoftJson</RootNamespace>
+    <RootNamespace>WampSharp.WebSocket4Net</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <AssemblyName>WampSharp.NewtonsoftJson</AssemblyName>
+    <AssemblyName>WampSharp.WebSocket4Net</AssemblyName>
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,12 +40,13 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="System.Collections.Immutable">
-      <HintPath>..\..\packages\System.Collections.Immutable.1.1.37\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\..\packages\WebSocket4Net.0.14.1\lib\monoandroid23\WebSocket4Net.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -60,37 +61,5 @@
       <Project>{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}</Project>
       <Name>WampSharp</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup Include="">
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\DetailsOptionsConverter.cs">
-      <Link>Newtonsoft\DetailsOptionsConverter.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\IWampMessageFormatter.cs">
-      <Link>Newtonsoft\IWampMessageFormatter.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\JsonFormatter.cs">
-      <Link>Newtonsoft\JsonFormatter.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\JsonWampMessageFormatter.cs">
-      <Link>Newtonsoft\JsonWampMessageFormatter.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\JTokenMessageParser.cs">
-      <Link>Newtonsoft\JTokenMessageParser.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\ReflectionExtensions.cs">
-      <Link>Newtonsoft\ReflectionExtensions.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Newtonsoft\SerializedValueConverter.cs">
-      <Link>Newtonsoft\SerializedValueConverter.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\Properties\AssemblyInfo.cs">
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\WAMP2\Binding\JTokenJsonBinding.cs">
-      <Link>WAMP2\Binding\JTokenJsonBinding.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\net45\Default\WampSharp.NewtonsoftJson\WAMP2\V2\Fluent\NewtonsoftJsonChannelFactoryExtensions.cs">
-      <Link>WAMP2\V2\Fluent\NewtonsoftJsonChannelFactoryExtensions.cs</Link>
-    </Compile>
   </ItemGroup>
 </Project>
