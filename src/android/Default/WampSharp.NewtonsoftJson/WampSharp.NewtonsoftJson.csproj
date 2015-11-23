@@ -59,4 +59,10 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\WampSharp\WampSharp.csproj">
+      <Project>{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}</Project>
+      <Name>WampSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
