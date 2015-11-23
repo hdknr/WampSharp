@@ -1,4 +1,4 @@
-﻿#if !PCL
+﻿#if !PCL || XAMARIN
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,9 +19,9 @@ namespace WampSharp.Core.Cra
         /// Computes a derived cryptographic key from a password according to PBKDF2
         /// http://en.wikipedia.org/wiki/PBKDF2. The function will only return a derived key
         /// if at least 'salt' is present in the 'extra' dictionary. The complete set of
-        /// attributes that can be set in 'extra': 
+        /// attributes that can be set in 'extra':
         ///    salt: The salt value to be used.
-        ///    iterations: Number of iterations of derivation algorithm to run. 
+        ///    iterations: Number of iterations of derivation algorithm to run.
         ///    keylen: Key length to derive.
         /// </summary>
         /// <param name="secret">The secret key from which to derive. </param>
@@ -58,9 +58,9 @@ namespace WampSharp.Core.Cra
         /// Computes a derived cryptographic key from a password according to PBKDF2
         /// http://en.wikipedia.org/wiki/PBKDF2. The function will only return a derived key
         /// if at least 'salt' is present in the 'extra' dictionary. The complete set of
-        /// attributes that can be set in 'extra': 
+        /// attributes that can be set in 'extra':
         ///    salt: The salt value to be used.
-        ///    iterations: Number of iterations of derivation algorithm to run. 
+        ///    iterations: Number of iterations of derivation algorithm to run.
         ///    keylen: Key length to derive.
         /// </summary>
         /// <param name="secret">The secret key from which to derive. </param>
@@ -81,13 +81,13 @@ namespace WampSharp.Core.Cra
 
             int keyLength = keyLen ?? DEFAULT_KEY_LEN;
             int iterationCount = iterations ?? DEFAULT_ITERATIONS;
-            
+
             byte[] keyBytes = PBKDF2Sha256GetBytes(keyLength, secretBytes, saltBytes, iterationCount);
             string result = Convert.ToBase64String(keyBytes);
-            
+
             Array.Clear(secretBytes, 0, secretBytes.Length);
             Array.Clear(saltBytes, 0, saltBytes.Length);
-           
+
             return result;
         }
 

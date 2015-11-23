@@ -13,7 +13,9 @@ namespace WampSharp.V2
     /// </summary>
     public class DefaultWampChannelFactory : WampChannelFactory
     {
+#if !NOMSGPACK
         private readonly JTokenMsgpackBinding mMsgpackBinding = new JTokenMsgpackBinding();
+#endif
         private readonly JTokenJsonBinding mJsonBinding = new JTokenJsonBinding();
 
         /// <summary>
@@ -119,7 +121,7 @@ namespace WampSharp.V2
         {
             return this.CreateChannel(address, realm, mJsonBinding, authenticator);
         }
-
+#if !NOMSGPACK
         /// <summary>
         /// Creates a <see cref="IWampChannel"/> that connects to a given realm,
         /// using the given address and msgpack binding
@@ -147,6 +149,7 @@ namespace WampSharp.V2
         {
             return this.CreateChannel(address, realm, mMsgpackBinding, authenticator);
         }
+#endif 
     }
 }
 #endif

@@ -1,4 +1,4 @@
-#if !PCL
+#if !PCL || XAMARIN
 using WampSharp.Core.Cra;
 using WampSharp.V2.Authentication;
 using WampSharp.V2.Core.Contracts;
@@ -38,9 +38,9 @@ namespace WampSharp.V2.Client
         {
             if (authmethod == WAMP_CRA)
             {
-                WampCraChallengeDetails challengeDetails = 
+                WampCraChallengeDetails challengeDetails =
                     extra.OriginalValue.Deserialize<WampCraChallengeDetails>();
-                
+
                 string signature;
 
                 if (challengeDetails.Salt == null)

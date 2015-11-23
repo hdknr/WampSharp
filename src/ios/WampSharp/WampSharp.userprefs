@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="WampSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../net45/WampSharp/WAMP2/V2/Core/Contracts/Session/Features/BrokerFeatures.cs">
+    <Files>
+      <File FileName="../../net45/WampSharp/WAMP2/V2/Api/CalleeProxy/ClientInvocationHandler.cs" Line="1" Column="1" />
+      <File FileName="../../net45/WampSharp/WAMP2/V2/Api/CalleeProxy/WampCalleeClientProxyFactory.cs" Line="1" Column="1" />
+      <File FileName="../../net45/WampSharp/WAMP2/V2/Client/WampChannelBuilder.cs" Line="1" Column="1" />
+      <File FileName="../../net45/WampSharp/WAMP2/V2/Core/Contracts/Session/Features/BrokerFeatures.cs" Line="5" Column="6" />
+      <File FileName="../../net45/WampSharp/WAMP2/V2/Api/CalleeProxy/WampCalleeProxyFactory.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -108,8 +108,11 @@ namespace WampSharp.V2
                                              X509Certificate2 certificate = null)
             : base(sessionAuthenticationFactory, realmContainer, uriValidator)
         {
+			#if !NOMSGPACK				
             bindings = bindings ?? new IWampBinding[] {new JTokenJsonBinding(), new JTokenMsgpackBinding()};
-
+			#else
+			bindings = bindings ?? new IWampBinding[] {new JTokenJsonBinding()};
+			#endif
             this.RegisterTransport(
                 new FleckAuthenticatedWebSocketTransport(location, cookieAuthenticatorFactory, certificate),
                 bindings.ToArray());

@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Default/WampSharp.WebSocket4Net/WampSharp.WebSocket4Net.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6Plus.9.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sample/PubSub/ViewController.cs">
+    <Files>
+      <File FileName="../net45/WampSharp.Default.Client/WAMP2/V2/DefaultWampChannelFactory.cs" Line="125" Column="22" />
+      <File FileName="../net45/WampSharp.Default.Router/WAMP2/V2/DefaultWampAuthenticationHost.cs" Line="114" Column="70" />
+      <File FileName="../net45/WampSharp.Default.Router/WAMP2/V2/DefaultWampHost.cs" Line="75" Column="70" />
+      <File FileName="Sample/PubSub/ViewController.cs" Line="53" Column="46" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/hide/Projects/WampSharp/src/net45/Default/WampSharp.Fleck/Fleck/FleckWebSocketTransport.cs" line="112" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
