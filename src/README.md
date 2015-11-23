@@ -1,4 +1,4 @@
-# Experimental Xamarin Suppport
+# Experimental Xamarin Support
 
 - ios is solution folder for working with Xamarin iOS
 
@@ -33,4 +33,4 @@
 
 ## TODO
 
-- Andoroid version
+- Android version
