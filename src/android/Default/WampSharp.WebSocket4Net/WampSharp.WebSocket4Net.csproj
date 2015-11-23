@@ -45,10 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Resources\Resource.designer.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -61,5 +57,26 @@
       <Project>{D8DFC41B-D22E-4CBF-9BAB-9AE0AF97672B}</Project>
       <Name>WampSharp</Name>
     </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WAMP2\V2\Fluent\WebSocket4NetActivator.cs">
+      <Link>WAMP2\V2\Fluent\WebSocket4NetActivator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WAMP2\V2\Fluent\WebSocket4NetChannelFactoryExtensions.cs">
+      <Link>WAMP2\V2\Fluent\WebSocket4NetChannelFactoryExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WebSocket4Net\WebSocket4NetBinaryConnection.cs">
+      <Link>WebSocket4Net\WebSocket4NetBinaryConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WebSocket4Net\WebSocket4NetConnection.cs">
+      <Link>WebSocket4Net\WebSocket4NetConnection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\net45\Default\WampSharp.WebSocket4Net\WebSocket4Net\WebSocket4NetTextConnection.cs">
+      <Link>WebSocket4Net\WebSocket4NetTextConnection.cs</Link>
+    </Compile>
   </ItemGroup>
 </Project>
