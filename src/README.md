@@ -24,3 +24,8 @@
 
 - working compile option :  `DEBUG;NET45;NOMSGPACK`
 - `NOMSGPACK` is disabling MsgPack.
+
+## TODO
+
+- iOS Sample working with `crossbar.io` (https://github.com/hdknr/crosschat)
+- Andoroid version
