@@ -63,3 +63,17 @@ Your donations help keep this project development alive.
 [CodeBetter]:http://codebetter.com/
 [travis-ci]:https://travis-ci.org/
 [AppVeyor]:http://www.appveyor.com/
+
+# Fleck
+
+~~~
+$ git submodule update --init Fleck
+Submodule 'Fleck' (https://github.com/hdknr/Fleck.git) registered for path 'Fleck'
+Cloning into 'Fleck'...
+remote: Counting objects: 1873, done.
+remote: Total 1873 (delta 0), reused 0 (delta 0), pack-reused 1873
+Receiving objects: 100% (1873/1873), 4.63 MiB | 1.03 MiB/s, done.
+Resolving deltas: 100% (1141/1141), done.
+Checking connectivity... done.
+Submodule path 'Fleck': checked out '2a660be054656af37a7d582517cfc82309562184'
+~~~
