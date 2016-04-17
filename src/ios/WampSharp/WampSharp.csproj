@@ -195,6 +195,7 @@
     </Compile>
     <Compile Include="..\..\net45\WampSharp\Core\Message\MessageType\MessageTypeDetailsAttribute.cs">
       <Link>Core\Message\MessageType\MessageTypeDetailsAttribute.cs</Link>
+      <DeployService-Deploy>True</DeployService-Deploy>
     </Compile>
     <Compile Include="..\..\net45\WampSharp\Core\Message\MessageType\WampMessageType.cs">
       <Link>Core\Message\MessageType\WampMessageType.cs</Link>
@@ -1535,6 +1536,9 @@
       <Link>WAMP2\V2\Api\CalleeProxy\Callbacks\Async\AsyncOperationCallback.cs</Link>
     </Compile>
     <Compile Include="App_Packages\LibLog.4.2\LibLog.cs" />
+    <Compile Include="..\..\net45\WampSharp\Core\Message\MessageType\WampMessageTypeComparer.cs">
+      <Link>Core\Message\MessageType\WampMessageTypeComparer.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

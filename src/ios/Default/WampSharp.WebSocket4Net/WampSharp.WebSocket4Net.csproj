@@ -34,7 +34,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="WebSocket4Net">
-      <HintPath>..\..\..\..\..\packages\WebSocket4Net.0.14.1\lib\Xamarin.iOS10\WebSocket4Net.dll</HintPath>
+      <HintPath>..\..\packages\WebSocket4Net.0.14.1\lib\Xamarin.iOS10\WebSocket4Net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
