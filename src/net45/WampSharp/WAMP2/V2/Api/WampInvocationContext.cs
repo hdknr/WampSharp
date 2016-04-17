@@ -10,6 +10,7 @@ namespace WampSharp.V2
     /// <summary>
     /// Includes information about the current invocation.
     /// </summary>
+    [Serializable]
     public class WampInvocationContext
     {
         #region Static Members

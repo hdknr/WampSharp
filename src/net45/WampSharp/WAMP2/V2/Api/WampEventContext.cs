@@ -9,6 +9,7 @@ namespace WampSharp.V2
     /// <summary>
     /// Includes information about the current event.
     /// </summary>
+    [Serializable]
     public class WampEventContext
     {
 
